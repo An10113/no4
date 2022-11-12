@@ -6,22 +6,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 p {
     font-size: 24px;
     line-height: 1.5;
 }
 
-h1 {
-    font-size: 42px;
-    font-weight: 400px;
-    align-content: center;
-}
-
-
-h2 {
-    font: 48px;
-}
 
 li {
     list-style: none;
@@ -34,7 +23,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -65,43 +54,4 @@ nav {
 
 .nav__link--anchor-primary:hover {
     background-color: lime;
-}
-
-/* About_me */
-.Introduction__info--wrap {
-    display: flex;
-    height: calc(100vh - 70px);
-    width: 1000px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-around;
-
-}
-.text--color{
-    color: green;
-}
-.Introduction__img--wrap{
-    max-width: 400px;
-    width: 50%;
-}
-.Introduction__para--wrap{
-    width: 50%;
-    
-}
-.Introduction__img--pic{
-    width: 100%;
-}
-.Introduction__links{
-    padding: 12px 12px;
-}
-.Introduction__links--tag{
-    padding: 0 8px;
-    text-decoration: none;
-    font-size: 16px;
-    color: green;
-}
-.language__container{
-    height: 50vh;
-    width: 1000px;
-    
 }
