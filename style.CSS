@@ -20,7 +20,7 @@ p {
 }
 
 .container {
-    padding: 50px 0;
+    padding-top: 80px;
 }
 
 .section__title {
@@ -215,7 +215,7 @@ nav {
 .Language:hover .Language__name {
     transform: scale(1);
 }
-
+/*Project*/
 .project__img {
     width: 100%;
     transition: all 400ms ease;
@@ -255,7 +255,9 @@ nav {
 .project__list {
     padding: 40px;
 }
-
+.project:hover .project__text{
+    opacity: 1;
+}
 .project__text {
     position: absolute;
     top: 50%;
@@ -263,7 +265,8 @@ nav {
     max-width: 500px;
     z-index: 3;
     left: 90px;
-
+    opacity: 0;
+    transition: all 400ms ease;
 }
 .project__text--title,
 .project__text--subtitle,
@@ -274,14 +277,22 @@ nav {
 
 }
 .project__text--title{
-    font-size: 40px;
+    font-size: 32px;
 
 }
-.project__text--paraơ{
+.project__text--para{
+    font-size: 15px;
     margin: 16px 0;
 }
 .project__text--link{
     text-decoration: none;
     font-size: 20px;
+    padding-right: 10px;
 
+}
+.project__text--subtitle{
+    font-size: 24px;
+}
+.project{
+    padding-bottom: 80px;
 }
