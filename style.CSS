@@ -32,6 +32,7 @@ p {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 li {
@@ -213,4 +214,74 @@ nav {
 
 .Language:hover .Language__name {
     transform: scale(1);
+}
+
+.project__img {
+    width: 100%;
+    transition: all 400ms ease;
+}
+
+.project__wrap {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 40);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.project__wrap::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1c1d25;
+    opacity: 0;
+    transition: all 400ms ease;
+    z-index: 2;
+}
+
+.project:hover .project__wrap:before {
+    opacity: 0.7;
+}
+
+.project:hover .project__img {
+    transform: scale(1.07);
+    filter: blur(10px);
+
+}
+
+.project__list {
+    padding: 40px;
+}
+
+.project__text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 500px;
+    z-index: 3;
+    left: 90px;
+
+}
+.project__text--title,
+.project__text--subtitle,
+.project__text--para,
+.project__text--link{
+    text-align: left;
+    color: #fff;
+
+}
+.project__text--title{
+    font-size: 40px;
+
+}
+.project__text--paraơ{
+    margin: 16px 0;
+}
+.project__text--link{
+    text-decoration: none;
+    font-size: 20px;
+
 }
